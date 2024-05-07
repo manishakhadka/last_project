@@ -12,7 +12,6 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     age = models.IntegerField(null=True)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
-
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
